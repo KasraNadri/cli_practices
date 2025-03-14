@@ -6,6 +6,7 @@ import (
 	"todo"
 )
 
+// ========== TEST FOR ADD ========== \\
 func TestAdd(t *testing.T) {
 	l := todo.List{}
 	taskName := "New Task"
@@ -15,6 +16,7 @@ func TestAdd(t *testing.T) {
 	}
 }
 
+// ========= TEST FOR COMPLETE ========== \\
 func TestComplete(t *testing.T) {
 	l := todo.List{}
 	taskName := "New Task"
@@ -34,6 +36,7 @@ func TestComplete(t *testing.T) {
 	}
 }
 
+// ========= TEST FOR DELETE ========== \\
 func TestDelete(t *testing.T) {
 	l := todo.List{}
 	tasks := []string{
@@ -61,6 +64,7 @@ func TestDelete(t *testing.T) {
 	}
 }
 
+// ========== TEST FOR SAVE AND GET ========== \\
 func TestSaveGet(t *testing.T) {
 	l1 := todo.List{}
 	l2 := todo.List{}
